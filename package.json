@@ -1,0 +1,14 @@
+{
+  "name": "chas-node-jwt",
+  "version": "0.0.1",
+  "description": "API Auth w/ JWT & Passport: https://www.digitalocean.com/community/tutorials/api-authentication-with-json-web-tokensjwt-and-passport",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jwt"
+  ],
+  "author": "JG",
+  "license": "ISC"
+}
