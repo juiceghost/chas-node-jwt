@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
 
 const Schema = mongoose.Schema;
 
@@ -19,7 +20,6 @@ UserSchema.pre(
     async function (next) {
         const user = this;
         const hash = await bcrypt.hash(this.password, 10);
-        console.log("Hej från save")
         this.password = hash;
         next();
     }
