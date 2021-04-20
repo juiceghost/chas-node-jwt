@@ -19,7 +19,7 @@ UserSchema.pre(
     async function (next) {
         const user = this;
         const hash = await bcrypt.hash(this.password, 10);
-
+        console.log("Hej från save")
         this.password = hash;
         next();
     }
